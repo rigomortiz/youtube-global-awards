@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RunCukesTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="testAT" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.datio.example.yga.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+      <option name="credential" />
+      <option name="region" />
+      <option name="useCurrentConnection" value="false" />
+    </extension>
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="PACKAGE_NAME" value="com.datio.example.yga" />
+    <option name="MAIN_CLASS_NAME" value="com.datio.example.yga.RunCukesTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="VM_PARAMETERS" value="-ea -Dspark.master=local[*]" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

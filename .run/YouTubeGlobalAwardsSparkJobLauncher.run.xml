@@ -1,0 +1,25 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="YouTubeGlobalAwardsSparkJobLauncher" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="com.datio.example.yga.YouTubeGlobalAwardsSparkJobLauncher" />
+    <module name="dataproc-spark-job-impl" />
+    <option name="PROGRAM_PARAMETERS" value="src/test/resources/config/application-test.conf" />
+    <option name="VM_PARAMETERS" value="-Dspark.master=local[*]" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.datio.example.yga.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+      <option name="credential" />
+      <option name="region" />
+      <option name="useCurrentConnection" value="false" />
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

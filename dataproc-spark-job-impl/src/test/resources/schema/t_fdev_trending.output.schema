@@ -1,0 +1,116 @@
+{
+  "namespace": "FDEV",
+  "name": "t_fdev_trending",
+  "doc": "INFORMACION DE LOS VIDEOS TRENDING DE YOUTUBE",
+  "database": "master",
+  "type": "record",
+  "fields": [{
+            "name": "country",
+            "type": "string",
+            "legacyName": "country",
+            "logicalFormat": "ALPHANUMERIC(15)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        },
+        {
+            "name": "country_name",
+            "type": "string",
+            "legacyName": "country",
+            "logicalFormat": "ALPHANUMERIC(30)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        },
+        {
+            "name": "video_id",
+            "type": "string",
+            "legacyName": "video_id",
+            "logicalFormat": "ALPHANUMERIC(20)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "year",
+            "type": "int32",
+            "legacyName": "year",
+            "logicalFormat": "NUMERIC SHORT",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "trending_date",
+            "type": "date",
+            "legacyName": "trending_date",
+            "logicalFormat": "DATE",
+            "deleted": false,
+            "metadata": false,
+            "default": "",
+            "format": "yyyy-MM-dd",
+            "locale": "mx"
+        }, {
+            "name": "title",
+            "type": "string",
+            "legacyName": "title",
+            "logicalFormat": "ALPHANUMERIC(125)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "channel_title",
+            "type": "string",
+            "legacyName": "channel_title",
+            "logicalFormat": "ALPHANUMERIC(100)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "category_id",
+            "type": "int32",
+            "legacyName": "category_id",
+            "logicalFormat": "NUMERIC SHORT",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "tags",
+            "type": "string",
+            "legacyName": "tags",
+            "logicalFormat": "ALPHANUMERIC(300)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "views",
+            "type": "int64",
+            "legacyName": "views",
+            "logicalFormat": "NUMERIC BIG",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "likes",
+            "type": "int64",
+            "legacyName": "likes",
+            "logicalFormat": "NUMERIC BIG",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "dislikes",
+            "type": "int64",
+            "legacyName": "dislikes",
+            "logicalFormat": "NUMERIC BIG",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+        }, {
+            "name": "category_event",
+            "type": "string",
+            "legacyName": "category_event",
+            "logicalFormat": "ALPHANUMERIC(1)",
+            "deleted": false,
+            "metadata": false,
+            "default": ""
+         }]
+}
