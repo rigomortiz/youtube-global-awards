@@ -17,13 +17,13 @@ mvn clean install
 Go to your IDE run configurations window and set the following configuration:
  * Main class: `com.datio.example.yga.YouTubeGlobalAwardsSparkJobLauncher`
  * VM options: `-Dspark.master=local[*]`
- * Program arguments should be a valid path to a configuration file: `dataproc-spark-job-impl/src/main/resources/config/application.conf`
+ * Program arguments should be a valid path to a configuration file: `dataproc-spark-job-impl/src/test/resources/config/application-test.conf`
  * Working directory should point to the root path of the project: `/home/example/workspace/youtube-global-awards`
  * Use classpath of the main implementation module => `dataproc-spark-job-impl`
  * Set the location of the local input and output files as environment variables:
-   * INPUT_SCHEMA_PATH = "dataproc-spark-job-impl/src/main/resources/schema/inputSchema.json"
-   * OUTPUT_SCHEMA_PATH = "dataproc-spark-job-impl/src/main/resources/schema/outputSchema.json"
-   * INPUT_PATH = "dataproc-spark-job-impl/src/main/resources/data/olympics.csv"
-   * OUTPUT_PATH = "dataproc-spark-job-impl/target/data/result"
+   * OUTPUT_SCHEMA_PATH = "dataproc-spark-job-impl/src/test/resources/schema/t_fdev_trending.output.schema"
+   * INPUT_PATH = "dataproc-spark-job-impl/src/test/resources/data/input/parquet/youtube/t_fdev_channels"
+   * INPUT_PATH = "dataproc-spark-job-impl/src/test/resources/data/input/parquet/youtube/t_fdev_video_info"
+   * OUTPUT_PATH = "dataproc-spark-job-impl/src/test/resources/data/output/t_fdev_trending"
 
 You will also need to enable the maven profile `run-local`.
