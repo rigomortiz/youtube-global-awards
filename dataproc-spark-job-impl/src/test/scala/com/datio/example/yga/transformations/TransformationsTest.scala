@@ -57,8 +57,8 @@ class TransformationsTest extends ContextProvider with IOUtils {
         Year()
       ).topViews(top, year, country)
 
-    output.filter(Trending.Year.column =!= year && Trending.Country.column =!= country &&
-      Trending.CategoryEvent.column =!= "1").count() shouldBe 0
+    output.filter(Trending.Year.column === year && Trending.Country.column === country &&
+      Trending.CategoryEvent.column === "1").count() shouldBe top
   }
 
   "topLikes method" should "return a DataFrame with the list of videos top likes" in {
@@ -72,8 +72,8 @@ class TransformationsTest extends ContextProvider with IOUtils {
         Year()
       ).topLikes(top, year, country)
 
-    output.filter(Trending.Year.column =!= year && Trending.Country.column =!= country &&
-      Trending.CategoryEvent.column =!= "1").count() shouldBe 0
+    output.filter(Trending.Year.column === year && Trending.Country.column === country &&
+      Trending.CategoryEvent.column === "2").count() shouldBe top
   }
 
   "topDislikes method" should "return a DataFrame with the list of videos top dislikes" in {
@@ -87,7 +87,7 @@ class TransformationsTest extends ContextProvider with IOUtils {
         Year()
       ).topDislikes(top, year, country)
 
-    output.filter(Trending.Year.column =!= year && Trending.Country.column =!= country &&
-      Trending.CategoryEvent.column =!= "1").count() shouldBe 0
+    output.filter(Trending.Year.column === year && Trending.Country.column === country &&
+      Trending.CategoryEvent.column === "3").count() shouldBe top
   }
 }
